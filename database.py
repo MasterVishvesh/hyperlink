@@ -11,7 +11,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATABASE_PATH = os.path.join(BASE_DIR, "pdf_tracking.db")
 
-DATABASE_URL = f"sqlite:///{DATABASE_PATH}"
+# DATABASE_URL = f"sqlite:///{DATABASE_PATH}"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 
 # -----------------------------
