@@ -31,7 +31,7 @@ def create_link():
     db.close()
 
     return {
-        "tracking_url": f"http://127.0.0.1:8000/view/{token}"
+        "tracking_url": f"hyperlink-production.up.railway.app/view/{token}"
     }
 
 
