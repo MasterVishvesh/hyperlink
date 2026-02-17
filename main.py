@@ -20,7 +20,7 @@ def create_link():
     db.commit()
     db.close()
 
-    return {"tracking_url": f"http://127.0.0.1:8000/view/{token}"}
+    return {"tracking_url": f"https://hyperlink-production.up.railway.app/view/{token}"}
 
 
 @app.get("/view/{token}")
